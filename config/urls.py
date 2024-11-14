@@ -17,11 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app.views import callback, index, redirect
+from app.views import callback, redirect, redirecting
 
 urlpatterns = [
+    path("favicon.ico", admin.site.urls),
     path('admin/', admin.site.urls),
-    path('', index, name='index'),
+    # path('', index, name='index'),
     path('redirect/', redirect, name='redirect'),
+    path('redirecting/', redirecting, name='redirecting'),
     path("callback/", callback, name="callback"),
 ]

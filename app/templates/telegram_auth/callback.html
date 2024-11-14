@@ -1,10 +1,9 @@
 It is template to render callback Telegram widget!
 
 <!-- {{ telegram_login_widget|safe }} -->
-{% autoescape off %}{{ telegram_login_widget }}{% endautoescape %}
-
+<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="testerajibuji2bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
 <script type="text/javascript">
   function onTelegramAuth(user) {
-    alert('Logged in as ' + user.first_name + ' ' + user.last_name + '!');
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
   }
 </script>

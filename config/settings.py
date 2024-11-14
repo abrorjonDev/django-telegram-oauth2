@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django_telegram_login',
+    # 'django_telegram_login',
     'app',
 ]
 
@@ -127,4 +127,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 TELEGRAM_BOT_NAME = 'emehmondevbot'
 TELEGRAM_BOT_TOKEN = '7698473697:AAE6445s3FJ5jkgxm1pCzDoyV7lMqUZGj9g'
-TELEGRAM_LOGIN_REDIRECT_URL = 'https://calm-peaches-thank.loca.lt'
+TELEGRAM_LOGIN_REDIRECT_URL = 'https://tgoauth.abrorjon.uz/redirecting/'
